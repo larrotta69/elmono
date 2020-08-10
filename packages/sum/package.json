@@ -1,0 +1,13 @@
+{
+  "name": "@elmono/sum",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@elmono/eslint-config": "1.0.0",
+    "chalk": "2.4.2"
+  }
+}
