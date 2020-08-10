@@ -4,11 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "yarn lint:calc & yarn lint:sum",
-    "lint:calc": "yarn workspace @elmono/calc lint",
-    "lint:sum": "yarn workspace @elmono/sum lint",
-    "start": "yarn workspace @elmono/calc start",
-    "del": "rimraf node_modules tools/eslint-config/node_modules"
+    "lint:all": "yarn workspaces lint",
+    "clean": "rimraf node_modules tools/eslint-config/node_modules && yarn",
+    "build:ui": "yarn workspace @elmono/ui build"
   },
   "workspaces": [
     "packages/*",

@@ -1,21 +1,32 @@
 {
   "name": "@elmono/ui",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+		"lint": "eslint .",
+		"build": "rollup -c"
   },
   "dependencies": {
-    "@elmono/eslint-config": "1.0.0",
-    "chalk": "2.4.2"
+    "@elmono/eslint-config": "1.0.0"
   },
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
     "@types/react": "^16.9.46",
+    "node-sass": "^4.14.1",
+    "rollup": "^2.23.1",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-postcss": "^3.1.5",
+    "rollup-plugin-typescript2": "^0.27.2",
     "typescript": "^3.9.7"
   }
 }

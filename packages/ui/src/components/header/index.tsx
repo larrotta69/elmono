@@ -2,7 +2,7 @@ import React from "react";
 
 import HeaderProps from "./header.types";
 
-import "./TestComponent.scss";
+import "./header.scss";
 
 const TestComponent: React.FC<HeaderProps> = ({ theme }) => (
   <div
