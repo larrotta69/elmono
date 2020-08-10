@@ -8,11 +8,8 @@
   ],
   "license": "MIT",
   "scripts": {
-		"lint": "eslint .",
-		"build": "rollup -c"
-  },
-  "dependencies": {
-    "@elmono/eslint-config": "1.0.0"
+    "lint": "eslint .",
+    "build": "rollup -c"
   },
   "peerDependencies": {
     "react": "^16.13.1",
@@ -27,6 +24,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-postcss": "^3.1.5",
     "rollup-plugin-typescript2": "^0.27.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "@elmono/eslint-config": "1.0.0"
   }
 }
