@@ -9,13 +9,17 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "rollup -c --watch",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@elmono/eslint-config": "1.0.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@types/react": "^16.9.46",
@@ -25,6 +29,6 @@
     "rollup-plugin-postcss": "^3.1.5",
     "rollup-plugin-typescript2": "^0.27.2",
     "typescript": "^3.9.7",
-    "@elmono/eslint-config": "1.0.0"
+    "rollup-plugin-terser": "^7.0.0"
   }
 }
