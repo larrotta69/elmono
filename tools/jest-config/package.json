@@ -1,0 +1,14 @@
+{
+  "name": "@elmono/jest-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.8",
+    "@types/jest": "^26.0.9",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.3.0",
+    "ts-jest": "^26.2.0"
+  }
+}

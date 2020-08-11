@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "lint": "eslint . --fix"
-  },
   "dependencies": {
     "eslint": "6.5.1",
     "eslint-config-prettier": "6.4.0",
