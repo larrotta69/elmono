@@ -1,5 +1,5 @@
-.test-component {
-  background-color: white;
+.component {
+  background-color: green;
   border: 1px solid black;
   padding: 16px;
   width: 360px;
@@ -9,7 +9,7 @@
     font-size: 64px;
   }
 
-  &.test-component-secondary {
+  &--secondary {
     background-color: black;
     color: white;
   }

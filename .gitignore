@@ -81,3 +81,4 @@ typings/
 
 # elmono
 build/
+**/.DS_Store

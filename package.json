@@ -7,7 +7,7 @@
     "lint:all": "yarn workspaces lint",
     "clean": "rimraf node_modules tools/eslint-config/node_modules && yarn",
     "build:ui": "yarn workspace @elmono/ui build",
-    "start:storybook": "yarn workspace @elmono/storybook storybook"
+    "storybook": "yarn workspace @elmono/storybook storybook"
   },
   "workspaces": [
     "packages/*",
