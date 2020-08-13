@@ -3,11 +3,12 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
-import postcssModules from "postcss-modules";
 import { terser } from "rollup-plugin-terser";
 import autoprefixer from "autoprefixer";
 
 const packageJson = require("./package.json");
+
+const isProd = global.process.env.ROLLUP_WATCH;
 
 export default {
   input: "src/index.ts",
@@ -28,7 +29,7 @@ export default {
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
-    // terser(),
+    isProd && terser(),
     postcss({
       plugins: [autoprefixer()],
       extract: false,

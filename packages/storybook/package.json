@@ -8,8 +8,9 @@
     "@elmono/ui": "1.0.0"
   },
   "scripts": {
+    "lint": "eslint .",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook"
+    "storybook:build": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",

@@ -4,9 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint:all": "yarn workspaces lint",
+    "lint:all": "yarn workspaces run lint",
     "clean": "rimraf node_modules tools/eslint-config/node_modules && yarn",
-    "build:ui": "yarn workspace @elmono/ui build",
+    "ui:build": "yarn workspace @elmono/ui build",
     "storybook": "yarn workspace @elmono/storybook storybook"
   },
   "workspaces": [

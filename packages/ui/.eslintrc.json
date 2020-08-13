@@ -1,3 +1,3 @@
 {
-  "extends": ["@elmono/eslint-config"]
+  "extends": ["@elmono/eslint-config-ts"]
 }
