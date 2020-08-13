@@ -8,7 +8,7 @@ import autoprefixer from "autoprefixer";
 
 const packageJson = require("./package.json");
 
-const isProd = global.process.env.ROLLUP_WATCH;
+const isProd = !global.process.env.ROLLUP_WATCH;
 
 export default {
   input: "src/index.ts",

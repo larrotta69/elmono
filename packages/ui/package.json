@@ -1,15 +1,15 @@
 {
   "name": "@elmono/ui",
   "version": "1.0.0",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "files": [
-    "build"
+    "dist"
   ],
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "build:clean": "rimraf ./build",
+    "build:clean": "rimraf ./dist",
     "build": "yarn build:clean && rollup -c",
     "dev": "yarn build:clean && rollup -c --watch",
     "test": "jest",

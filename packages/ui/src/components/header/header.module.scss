@@ -1,16 +1,4 @@
-.component {
-  background-color: green;
-  border: 1px solid black;
-  padding: 16px;
-  width: 360px;
-  text-align: center;
-
-  .heading {
-    font-size: 64px;
-  }
-
-  &--secondary {
-    background-color: black;
-    color: white;
-  }
+.header {
+  background: #457183;
+  border-bottom: 5px solid #17b68e;
 }
