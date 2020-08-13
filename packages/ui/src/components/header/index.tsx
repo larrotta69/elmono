@@ -9,8 +9,8 @@ const Header: React.FC<HeaderProps> = props => {
 
   return (
     <header data-testid="header" className={styles.header}>
-      <p>{text}</p>
-      <img src={imgUrl} alt={imgAlt || text} />
+      <p className={styles.header__text}>{text}</p>
+      <img className={styles.header__image} src={imgUrl} alt={imgAlt || text} />
     </header>
   );
 };

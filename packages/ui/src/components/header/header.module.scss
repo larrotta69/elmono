@@ -2,6 +2,20 @@
 @import "../../styles/vars.module";
 
 .header {
-  height: $size-base;
-  border-bottom: 5px solid #17b68e;
+  background-color: $green-dark;
+  border-bottom: 5px solid $green;
+  position: relative;
+  padding: $size-base;
+
+  &__image {
+    position: absolute;
+    top: $size-base;
+    right: $size-base;
+    width: spacer_base_by(5);
+  }
+
+  &__text {
+    color: white;
+    font-weight: bold;
+  }
 }

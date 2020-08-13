@@ -9,7 +9,7 @@ describe("Test Component", () => {
 
   beforeEach(() => {
     props = {
-      name: "Testing",
+      text: "Testing",
       imgUrl: "url/"
     };
   });
