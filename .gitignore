@@ -82,4 +82,5 @@ typings/
 # elmono
 build/
 dist/
-**/.DS_Store
+**/*/.DS_Store
+packages/ui/.DS_Store

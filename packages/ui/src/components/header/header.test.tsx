@@ -2,10 +2,9 @@ import React from "react";
 import { render } from "@testing-library/react";
 
 import Header from "./";
-import HeaderProps from "./header.types";
 
 describe("Test Component", () => {
-  let props: HeaderProps;
+  let props;
 
   beforeEach(() => {
     props = {

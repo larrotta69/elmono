@@ -1,13 +1,11 @@
 import React from "react";
-
-import HeaderProps from "./header.types";
+import PropTypes from "prop-types";
 
 import styles from "./header.module.scss";
 
-const Header: React.FC<HeaderProps> = props => {
+const Header: React.FC = () => {
   return (
-    <header data-testid="header" className={`${styles.header}`}>
-      <h1 className="heading">I'm the test component</h1>
+    <header data-testid="header" className={styles.header}>
       <ul className="title-area right">
         <li className="name">
           <hgroup>
@@ -23,6 +21,10 @@ const Header: React.FC<HeaderProps> = props => {
       </ul>
     </header>
   );
+};
+
+Header.propTypes = {
+  theme: PropTypes.string
 };
 
 export default Header;
