@@ -6,9 +6,8 @@ import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
 import autoprefixer from "autoprefixer";
 
-const packageJson = require("./package.json");
-
-const isProd = !global.process.env.ROLLUP_WATCH;
+import packageJson from "./package.json";
+const isProd = !process.env.ROLLUP_WATCH;
 
 export default {
   input: "src/index.ts",
