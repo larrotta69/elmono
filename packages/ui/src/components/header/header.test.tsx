@@ -1,14 +1,16 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
+import { HeaderProps } from "./header.types";
 import Header from "./";
 
 describe("Test Component", () => {
-  let props;
+  let props: HeaderProps;
 
   beforeEach(() => {
     props = {
-      theme: "primary"
+      name: "Testing",
+      imgUrl: "url/"
     };
   });
 
@@ -20,14 +22,5 @@ describe("Test Component", () => {
     const testComponent = getByTestId("test-component");
 
     expect(testComponent).toHaveClass("test-component-primary");
-  });
-
-  it("should have secondary className with theme set as secondary", () => {
-    props.theme = "secondary";
-    const { getByTestId } = renderComponent();
-
-    const testComponent = getByTestId("test-component");
-
-    expect(testComponent).toHaveClass("test-component-secondary");
   });
 });

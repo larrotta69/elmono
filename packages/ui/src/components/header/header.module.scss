@@ -1,4 +1,7 @@
+@import "../../styles/mixins.module";
+@import "../../styles/vars.module";
+
 .header {
-  background: #457183;
+  height: $size-base;
   border-bottom: 5px solid #17b68e;
 }

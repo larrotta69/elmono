@@ -1,30 +1,20 @@
 import React from "react";
-import PropTypes from "prop-types";
+
+import { HeaderProps, propTypes } from "./header.types";
 
 import styles from "./header.module.scss";
 
-const Header: React.FC = () => {
+const Header: React.FC<HeaderProps> = props => {
+  const { text, imgUrl, imgAlt } = props;
+
   return (
     <header data-testid="header" className={styles.header}>
-      <ul className="title-area right">
-        <li className="name">
-          <hgroup>
-            <h1 className="site-title">
-              <a href="#">
-                <strong>Daniel Larrotta</strong>
-                <span> Web Engineer </span>
-                <small>Front End developer</small>
-              </a>
-            </h1>
-          </hgroup>
-        </li>
-      </ul>
+      <p>{text}</p>
+      <img src={imgUrl} alt={imgAlt || text} />
     </header>
   );
 };
 
-Header.propTypes = {
-  theme: PropTypes.string
-};
+Header.propTypes = propTypes;
 
 export default Header;

@@ -1,0 +1,5 @@
+@import "./vars.module";
+
+@function spacer_base_by($n) {
+  @return $size-base * $n;
+}
