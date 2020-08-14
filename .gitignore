@@ -79,7 +79,21 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# next.js
+/.next/
+/out/
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
 # elmono
+*.pem
 build/
 dist/
 **/*/.DS_Store
