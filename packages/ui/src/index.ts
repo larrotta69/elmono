@@ -1,3 +1,4 @@
 import Header from "./components/header";
+import Hero from "./components/hero";
 
-export { Header };
+export { Header, Hero };
