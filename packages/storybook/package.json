@@ -5,7 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@elmono/ui": "1.0.0"
+    "@elmono/ui": "1.0.0",
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1"
   },
   "scripts": {
     "lint": "eslint .storybook/*.js",
@@ -13,8 +15,8 @@
     "storybook:build": "build-storybook"
   },
   "devDependencies": {
-    "@elmono/eslint-config": "1.0.0",
     "@babel/core": "^7.11.1",
+    "@elmono/eslint-config": "1.0.0",
     "@storybook/addon-docs": "^6.0.5",
     "@storybook/react": "^6.0.5",
     "babel-loader": "^8.1.0",

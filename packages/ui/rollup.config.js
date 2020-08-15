@@ -31,7 +31,8 @@ export default {
     isProd && terser(),
     postcss({
       plugins: [autoprefixer()],
-      extract: false,
+      extract: true,
+      minimize: isProd,
       modules: true,
       use: ["sass"]
     })
