@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         text="Daniel Larrotta"
         imgUrl="https://larrotta69.github.io/app/img/tigre_50.png"
       />
-      <Hero text="Heroo" />
+      <Hero text="Daniel" />
       <main>{children}</main>
     </>
   );
