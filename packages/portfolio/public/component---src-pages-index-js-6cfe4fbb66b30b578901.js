@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(n,e,t){"use strict";t.r(e);var c=t("ERkP"),o=t.n(c),r=t("Bl7J");e.default=function(){return o.a.createElement(r.a,null,"Under construction")}}}]);
-//# sourceMappingURL=component---src-pages-index-js-6cfe4fbb66b30b578901.js.map
