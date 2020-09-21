@@ -1,0 +1,20 @@
+.footer {
+  background: white;
+  text-align: center;
+  height: 8rem;
+}
+
+.footerData {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.footerDivider {
+  font-weight: bold;
+  border-bottom: 2px solid;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}

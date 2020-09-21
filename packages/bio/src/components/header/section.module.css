@@ -1,0 +1,10 @@
+.header {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerText {
+  font-size: 5rem;
+  margin: 3rem 0;
+}

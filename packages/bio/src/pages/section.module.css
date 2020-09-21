@@ -1,0 +1,27 @@
+.wrapper {
+	background-color: var(--light-gray);
+	position: relative;
+}
+
+.section {
+  background-color: var(--blue);
+  padding: 3rem;
+  color: white;
+  padding-left: 50%;
+}
+
+.section h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.sectionSecondary {
+  background-color: var(--grey);
+  padding: 3rem;
+  padding-left: 50%;
+}
+
+.sectionSecondary h3 {
+  font-size: 2.5rem;
+}

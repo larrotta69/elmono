@@ -1,0 +1,3 @@
+{
+  "extends": ["@elmono/eslint-config-react"]
+}
