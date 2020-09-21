@@ -8,7 +8,8 @@
     "ui:build": "yarn workspace @elmono/ui build",
     "ui:watch": "yarn workspace @elmono/ui dev",
     "next:watch": "yarn workspace @elmono/mono-next next dev",
-    "port:watch": "yarn workspace @elmono/mono-portfolio start",
+    "port:watch": "yarn workspace @elmono/portfolio start",
+    "port:deploy": "yarn ui:build && yarn workspace @elmono/portfolio deploy",
     "storybook": "yarn workspace @elmono/storybook storybook"
   },
   "workspaces": [

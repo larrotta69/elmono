@@ -5,12 +5,21 @@
   background-color: $green-light;
   position: relative;
   padding: $size-base;
-  min-height: spacer_base_by(5);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  &__title {
+    font-size: spacer_base_by(2);
+    margin-bottom: spacer_base_by(1);
+  }
 
   &__text {
-    font-size: spacer_base_by(2);
+    font-size: 25vw;
+    color: $green;
+    margin: spacer_base_by(3) 0;
+    line-height: 1;
+    font-weight: bold;
   }
 }

@@ -1,22 +1,17 @@
 @import "../../styles/mixins.module";
 @import "../../styles/vars.module";
 
-.header {
+.footer {
   background-color: $green-dark;
-  border-bottom: 5px solid $green;
+  border-top: 5px solid $green;
   position: relative;
   padding: $size-base;
   z-index: 99;
 
   &__image {
     position: absolute;
-    top: $size-base;
-    left: $size-base;
+    top: spacer_base_by(-3);
+    right: $size-base;
     width: spacer_base_by(5);
-  }
-
-  &__text {
-    color: white;
-    font-weight: bold;
   }
 }
