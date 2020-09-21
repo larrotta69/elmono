@@ -98,3 +98,4 @@ build/
 dist/
 **/*/.DS_Store
 packages/ui/.DS_Store
+**/public/
