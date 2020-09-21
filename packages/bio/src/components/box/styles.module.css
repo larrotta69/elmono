@@ -1,9 +1,5 @@
 .box {
   background-color: var(--dark-gray);
-  position: absolute;
-  left: 5%;
-  width: 40%;
-  bottom: 8rem;
   padding: 2rem;
 }
 
@@ -16,10 +12,20 @@
 
 .card:last-of-type {
   margin: 0;
+  padding: 0;
   border: none;
 }
 
 .card p {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .box {
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    bottom: 8rem;
+  }
 }

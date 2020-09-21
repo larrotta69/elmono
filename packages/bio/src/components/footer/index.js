@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./section.module.css";
+import styles from "./styles.module.css";
 
 const data = {
   phone: "+57 ",

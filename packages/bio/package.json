@@ -28,6 +28,7 @@
     "engineering"
   ],
   "scripts": {
+    "prebuild": "yarn clean",
     "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",

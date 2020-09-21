@@ -1,0 +1,193 @@
+:root {
+  --h-gray: #656a67;
+  --h-light-gray: #8c8d92;
+  --h-dark-gray: #677073;
+  --h-blue: #43abb4;
+  --h-fingers-height: 30%;
+  --h-palm-height: 25%;
+  --h-base-height: 45%;
+  --h-distance: 15%;
+}
+
+.hand {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.fingers {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.finger {
+  background: var(--h-gray);
+  width: 15%;
+  bottom: 0;
+  position: relative;
+}
+
+.fingerUp {
+  position: absolute;
+  height: 15%;
+  top: 15%;
+  background: var(--h-light-gray);
+  width: 140%;
+  left: -20%;
+}
+
+.fingerDown {
+  position: absolute;
+  height: 15%;
+  top: 55%;
+  background: var(--h-light-gray);
+  width: 140%;
+  left: -20%;
+}
+
+.finger:nth-of-type(1) {
+  top: 15%;
+  height: 85%;
+}
+
+.finger:nth-of-type(2) {
+  top: 5%;
+  height: 95%;
+}
+
+.finger:nth-of-type(3) {
+  top: 10%;
+  height: 90%;
+}
+
+.finger:nth-of-type(4) {
+  top: 20%;
+  height: 80%;
+}
+
+.palm {
+  position: absolute;
+  top: 33%;
+  height: 20%;
+  left: 30%;
+  right: 30%;
+}
+
+.palmTop {
+  height: 40%;
+  width: 100%;
+  background: var(--h-blue);
+  position: relative;
+  z-index: 1;
+}
+
+.palmBase {
+  height: 30%;
+  background: var(--h-blue);
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.palmL {
+  background: var(--h-gray);
+  position: absolute;
+  height: 50%;
+  top: 30%;
+  width: 20%;
+  left: -68%;
+  right: 0;
+  margin: 0 auto;
+  transform: rotate(-15deg);
+}
+
+.palmC {
+  background: var(--h-gray);
+  position: absolute;
+  height: 50%;
+  top: 30%;
+  width: 20%;
+  left: 0%;
+  right: 0;
+  margin: 0 auto;
+}
+
+.palmR {
+  background: var(--h-gray);
+  position: absolute;
+  height: 50%;
+  top: 30%;
+  width: 20%;
+  left: 0;
+  right: -68%;
+  margin: 0 auto;
+  transform: rotate(15deg);
+}
+
+.base {
+  position: absolute;
+  top: 53%;
+  height: var(--h-base-height);
+  left: var(--h-distance);
+  right: var(--h-distance);
+}
+
+.baseRot {
+  position: absolute;
+  right: 0;
+  margin: 0 auto;
+  left: 0;
+  background: var(--h-gray);
+  width: 15%;
+  height: 20%;
+  z-index: 1;
+}
+
+.baseRotBase {
+  position: absolute;
+  height: 10%;
+  background: var(--h-dark-gray);
+  width: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 20%;
+  z-index: 1;
+}
+
+.baseTrunkL {
+  position: absolute;
+  height: 70%;
+  background: var(--h-light-gray);
+  width: 10%;
+  left: calc(40% - 1px);
+  bottom: 20%;
+}
+
+.baseTrunkR {
+  position: absolute;
+  height: 70%;
+  background: var(--h-light-gray);
+  width: 10%;
+  left: calc(50% + 1px);
+  bottom: 20%;
+}
+
+.baseBase {
+  height: 20%;
+  background: var(--h-blue);
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

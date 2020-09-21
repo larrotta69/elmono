@@ -134,4 +134,5 @@ table {
   --light-gray: #e9e9e9;
   --dark-gray: #343843;
   --blue: #06b0bb;
+  --vp-desktop: 1024px;
 }

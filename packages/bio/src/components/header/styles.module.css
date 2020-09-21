@@ -1,0 +1,17 @@
+.header {
+  padding: 3rem;
+  /* background-image: url(https://i.pinimg.com/564x/58/17/1b/58171b6b04c6dc5600c7795932bd8518.jpg);
+  background-size: 1370px; */
+}
+
+.headerText {
+  font-size: 5rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+}
